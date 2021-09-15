@@ -197,12 +197,11 @@ def app():
                 st.write("---")
             
             
-        
-            
-
+    
         with st.beta_expander("Check for outliers"):
             numericData = df.select_dtypes(exclude = [object]).columns
-            selectVar = st.multiselect("Enter a variable", df[numericData].columns, key=1)
+            
+            selectVar = st.multiselect("Enter a variable", df[numericData].columns, key = 1)
             
             if len(selectVar)>1:
                 st.text("You can only select one variable")
