@@ -107,8 +107,11 @@ celerybeat.pid
 # Environments
 .env
 .venv
-.EDAappENV
+
 env/
+EDAappENV/
+activate/
+deactivate/
 venv/
 ENV/
 env.bak/
